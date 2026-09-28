@@ -1,0 +1,4 @@
+LAB erstellt durch Mathias Gut:
+
+Fehlerbeschreibung:
+Der Laptop Verwaltung kann die Webseite ifa.ch nicht erreichen. Alle anderen Geräte funktionieren einwandfrei.

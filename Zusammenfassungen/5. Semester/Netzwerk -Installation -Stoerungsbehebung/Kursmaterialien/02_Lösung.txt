@@ -1,0 +1,21 @@
+LAB erstellt durch Mathias Gut:
+
+Fehler auf Gerät:
+S11
+
+Fehlerbeschreibung:
+1. Auf dem S11 Switch ist Portfast und der BPDU Guard nicht aktiviert.
+2. Zudem ist der Switch S11 nicht für RSTP konfiguriert.
+3. Das VLAN 20 ist auf dem Switch nicht enthalten.
+
+Fehler gefunden mit (Commands):
+show run
+show vlan
+
+Fehlerbehebung (Commands):
+S11(config)# spanning-tree mode rapid-pvst
+S11(config)# interface range f0/1-20
+S11(config-if-range)# spanning-tree portfast
+S11(config-if-range)# spanning-tree bpduguard enable
+
+S11(config)# vlan 20

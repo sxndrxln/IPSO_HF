@@ -1,0 +1,15 @@
+LAB erstellt durch Mathias Gut:
+
+Fehler auf Gerät:
+R2
+
+Fehlerbeschreibung:
+Auf dem R2 fehlt in der ACL der Eintrag für den DNS Zugriff aus dem Netzwerk 192.168.21.0/24.
+
+Fehler gefunden mit (Commands):
+ping und traceroute (funktionieren bis zum Webserver)
+show access-lists
+
+Fehlerbehebung (Commands):
+R2(config)# ip access-list extended acl
+R2(config-ext-nacl)# permit udp 192.168.21.0 0.0.0.255 host 172.20.20.100 eq 53

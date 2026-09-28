@@ -1,0 +1,4 @@
+LAB erstellt durch Mathias Gut:
+
+Fehlerbeschreibung:
+Der Laptop GL1 und der Laptop Verwaltung können nicht auf die Webseite ifa.ch zugreifen.

@@ -1,0 +1,17 @@
+LAB erstellt durch Mathias Gut:
+
+Fehler auf Gerät:
+R4
+
+Fehlerbeschreibung:
+Auf dem Router R4 fehlt die Standard-Route und die Bekanntgabe dieser über OSPF.
+
+Fehler gefunden mit (Commands):
+ping und traceroute (ICMP)
+show run
+
+Fehlerbehebung (Commands):
+
+R4(config)# ip route 0.0.0.0 0.0.0.0 192.0.2.10 
+R4(config)# router ospf 1
+R4(config-router)# default-information originate

@@ -1,0 +1,4 @@
+LAB erstellt durch Mathias Gut:
+
+Fehlerbeschreibung:
+Beim GL1 Laptop ist jeweils beim Starten die Verbindung für einige Zeit eingeschränkt. Zudem kann die Webseite www.ifa.ch nicht erreicht werden.
